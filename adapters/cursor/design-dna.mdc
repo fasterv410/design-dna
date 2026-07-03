@@ -1,0 +1,42 @@
+---
+description: Reverse-engineer a design system from a reference image — measure real pixels, build semantic tokens, rebuild in a lab, verify by measurement. Use when matching or learning from a screenshot/app/site.
+globs:
+alwaysApply: false
+---
+
+# Design DNA (Cursor rule)
+
+Install: copy this file to `.cursor/rules/design-dna.mdc` in your project.
+Cursor loads it as a rule; it activates when the description matches the task,
+or attach it manually with `@design-dna`.
+
+## The one rule
+
+**Measure, don't guess.** Sample real pixels. Never type a hex code or a size
+from memory.
+
+## The method — seven steps, in order
+
+1. **Capture** — collect references at full resolution; note the device scale
+   (3x phone: 1320px file = 440pt) so you can convert pixels to layout units.
+2. **Measure** — exact colors (crop + eyedropper), type sizes (cap-height px ÷
+   scale), spacing, radii, shadows. Record real numbers.
+3. **Distill** — write `REFERENCE.md`: palette with semantic roles, type scale,
+   spacing/radius law, depth model, 3–6 named principles, and a name for the
+   direction.
+4. **Tokenize** — two layers: raw primitives + semantic roles named by role
+   (`--color-accent`, not `--color-purple`). Data-viz colors are semantic to
+   the data, used only on data ink. Light + dark as parallel sets if needed.
+5. **Lab** — rebuild a 1:1 replica in an isolated sandbox using only the
+   tokens. A missing token is a gap to add, not to hack around. Lab shortcuts
+   never leak to production.
+6. **Verify** — measure the rebuild vs the reference with
+   `getBoundingClientRect` and computed-color sampling. Threshold: within 1–3px
+   on geometry, exact on color. Record deltas; trust the number over your eye.
+7. **Record** — write an ADR for the direction (supersede, don't delete), then
+   promote the proven language from lab to production.
+
+## Ethics
+
+Extract the *system* and rebuild it as your own original work. Don't republish
+the reference's assets or branding.

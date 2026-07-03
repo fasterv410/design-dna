@@ -1,0 +1,144 @@
+<svg viewBox="0 0 1440 620" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif">
+  <defs>
+    <clipPath id="round"><rect x="2" y="2" width="1436" height="616" rx="28"/></clipPath>
+  </defs>
+
+  <!-- canvas -->
+  <g clip-path="url(#round)">
+    <rect x="2" y="2" width="1436" height="616" fill="#F6F6FA"/>
+  </g>
+  <rect x="2" y="2" width="1436" height="616" rx="28" fill="none" stroke="#E7E7EE" stroke-width="2"/>
+
+  <!-- header -->
+  <text x="44" y="66" fill="#6B5CFF" font-size="15" font-weight="700" letter-spacing="3">DESIGN DNA</text>
+  <text x="44" y="104" fill="#1B1C1E" font-size="29" font-weight="700">From a screenshot to a verified design system</text>
+  <g>
+    <rect x="1136" y="52" width="260" height="40" rx="20" fill="#EEEBFF"/>
+    <circle cx="1162" cy="72" r="5" fill="#6B5CFF"/>
+    <text x="1176" y="77" fill="#4B3FD6" font-size="15" font-weight="600">measure, don’t guess</text>
+  </g>
+
+  <!-- ============ PANEL 1 · REFERENCE ============ -->
+  <g transform="translate(40,150)">
+    <rect x="8" y="14" width="384" height="396" rx="24" fill="#181A2B" opacity="0.06"/>
+    <rect x="8" y="8" width="384" height="396" rx="24" fill="#FFFFFF" stroke="#ECECF2"/>
+    <!-- chip -->
+    <rect x="26" y="28" width="150" height="34" rx="17" fill="#F0F0F4"/>
+    <circle cx="45" cy="45" r="12" fill="#1B1C1E"/>
+    <text x="45" y="50" fill="#FFFFFF" font-size="13" font-weight="700" text-anchor="middle">1</text>
+    <text x="66" y="50" fill="#4A4A52" font-size="14" font-weight="600">Reference</text>
+    <!-- ring -->
+    <circle cx="200" cy="176" r="66" fill="none" stroke="#EFEFF3" stroke-width="16"/>
+    <circle cx="200" cy="176" r="66" fill="none" stroke="#6B5CFF" stroke-width="16" stroke-linecap="round"
+            stroke-dasharray="257 415" transform="rotate(-90 200 176)"/>
+    <text x="200" y="184" fill="#1B1C1E" font-size="46" font-weight="700" text-anchor="middle">28.4</text>
+    <text x="200" y="208" fill="#9A9AA2" font-size="13" font-weight="500" text-anchor="middle">years</text>
+    <!-- stat rows -->
+    <text x="28" y="292" fill="#9A9AA2" font-size="13" font-weight="500">Resting HR</text>
+    <text x="372" y="292" fill="#1B1C1E" font-size="14" font-weight="700" text-anchor="end">58</text>
+    <rect x="28" y="302" width="344" height="6" rx="3" fill="#EFEFF3"/>
+    <rect x="28" y="302" width="214" height="6" rx="3" fill="#2FB79A"/>
+    <text x="28" y="342" fill="#9A9AA2" font-size="13" font-weight="500">Sleep</text>
+    <text x="372" y="342" fill="#1B1C1E" font-size="14" font-weight="700" text-anchor="end">7.4h</text>
+    <rect x="28" y="352" width="344" height="6" rx="3" fill="#EFEFF3"/>
+    <rect x="28" y="352" width="182" height="6" rx="3" fill="#E7B549"/>
+  </g>
+
+  <!-- arrow 1 -->
+  <text x="480" y="342" fill="#9A9AA2" font-size="13" font-weight="600" text-anchor="middle">measure</text>
+  <line x1="452" y1="358" x2="506" y2="358" stroke="#C7C7D2" stroke-width="2.5"/>
+  <path d="M506 358 l-9 -5 v10 z" fill="#C7C7D2"/>
+
+  <!-- ============ PANEL 2 · DESIGN DNA ============ -->
+  <g transform="translate(520,150)">
+    <rect x="8" y="14" width="384" height="396" rx="24" fill="#181A2B" opacity="0.06"/>
+    <rect x="8" y="8" width="384" height="396" rx="24" fill="#FFFFFF" stroke="#ECECF2"/>
+    <rect x="26" y="28" width="190" height="34" rx="17" fill="#F0F0F4"/>
+    <circle cx="45" cy="45" r="12" fill="#1B1C1E"/>
+    <text x="45" y="50" fill="#FFFFFF" font-size="13" font-weight="700" text-anchor="middle">2</text>
+    <text x="66" y="50" fill="#4A4A52" font-size="14" font-weight="600">Palette &amp; tokens</text>
+
+    <!-- swatch grid -->
+    <!-- row 1 -->
+    <g transform="translate(34,84)">
+      <rect width="46" height="46" rx="13" fill="#F6F6FA" stroke="#E4E4EC"/>
+      <text x="0" y="62" fill="#1B1C1E" font-size="11" font-weight="700">#F6F6FA</text>
+      <text x="0" y="76" fill="#9A9AA2" font-size="10">canvas</text>
+    </g>
+    <g transform="translate(162,84)">
+      <rect width="46" height="46" rx="13" fill="#1B1C1E"/>
+      <text x="0" y="62" fill="#1B1C1E" font-size="11" font-weight="700">#1B1C1E</text>
+      <text x="0" y="76" fill="#9A9AA2" font-size="10">ink</text>
+    </g>
+    <g transform="translate(290,84)">
+      <rect width="46" height="46" rx="13" fill="#6B5CFF"/>
+      <text x="0" y="62" fill="#1B1C1E" font-size="11" font-weight="700">#6B5CFF</text>
+      <text x="0" y="76" fill="#9A9AA2" font-size="10">accent</text>
+    </g>
+    <!-- row 2 -->
+    <g transform="translate(34,168)">
+      <rect width="46" height="46" rx="13" fill="#EFEFF3" stroke="#E4E4EC"/>
+      <text x="0" y="62" fill="#1B1C1E" font-size="11" font-weight="700">#EFEFF3</text>
+      <text x="0" y="76" fill="#9A9AA2" font-size="10">sunken</text>
+    </g>
+    <g transform="translate(162,168)">
+      <rect width="46" height="46" rx="13" fill="#2FB79A"/>
+      <text x="0" y="62" fill="#1B1C1E" font-size="11" font-weight="700">#2FB79A</text>
+      <text x="0" y="76" fill="#9A9AA2" font-size="10">viz·good</text>
+    </g>
+    <g transform="translate(290,168)">
+      <rect width="46" height="46" rx="13" fill="#E7B549"/>
+      <text x="0" y="62" fill="#1B1C1E" font-size="11" font-weight="700">#E7B549</text>
+      <text x="0" y="76" fill="#9A9AA2" font-size="10">viz·warn</text>
+    </g>
+
+    <line x1="34" y1="286" x2="366" y2="286" stroke="#ECECF2"/>
+
+    <!-- type scale -->
+    <text x="34" y="318" fill="#1B1C1E" font-size="25" font-weight="700">Aa</text>
+    <text x="86" y="318" fill="#9A9AA2" font-size="12" font-weight="500">display · 34 / 700</text>
+    <text x="34" y="348" fill="#1B1C1E" font-size="18" font-weight="600">Aa</text>
+    <text x="86" y="348" fill="#9A9AA2" font-size="12" font-weight="500">title · 20 / 600</text>
+    <text x="34" y="376" fill="#1B1C1E" font-size="14" font-weight="400">Aa</text>
+    <text x="86" y="376" fill="#9A9AA2" font-size="12" font-weight="500">body · 15 / 400 · radius 24 · space 4·8·16·24</text>
+  </g>
+
+  <!-- arrow 2 -->
+  <text x="960" y="342" fill="#9A9AA2" font-size="13" font-weight="600" text-anchor="middle">rebuild</text>
+  <line x1="932" y1="358" x2="986" y2="358" stroke="#C7C7D2" stroke-width="2.5"/>
+  <path d="M986 358 l-9 -5 v10 z" fill="#C7C7D2"/>
+
+  <!-- ============ PANEL 3 · REBUILT + VERIFIED ============ -->
+  <g transform="translate(1000,150)">
+    <rect x="8" y="14" width="384" height="396" rx="24" fill="#181A2B" opacity="0.06"/>
+    <rect x="8" y="8" width="384" height="396" rx="24" fill="#FFFFFF" stroke="#ECECF2"/>
+    <rect x="26" y="28" width="164" height="34" rx="17" fill="#E7F6F1"/>
+    <circle cx="45" cy="45" r="12" fill="#2FB79A"/>
+    <path d="M40 45 l4 4 l7 -8" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="66" y="50" fill="#1E7A66" font-size="14" font-weight="600">Rebuilt</text>
+
+    <!-- ring rebuilt -->
+    <circle cx="200" cy="176" r="66" fill="none" stroke="#EFEFF3" stroke-width="16"/>
+    <circle cx="200" cy="176" r="66" fill="none" stroke="#6B5CFF" stroke-width="16" stroke-linecap="round"
+            stroke-dasharray="257 415" transform="rotate(-90 200 176)"/>
+    <text x="200" y="184" fill="#1B1C1E" font-size="46" font-weight="700" text-anchor="middle">28.4</text>
+    <text x="200" y="208" fill="#9A9AA2" font-size="13" font-weight="500" text-anchor="middle">years</text>
+
+    <!-- verify callout: delta on ring -->
+    <line x1="284" y1="110" x2="284" y2="242" stroke="#2FB79A" stroke-width="1.5" stroke-dasharray="4 4"/>
+    <line x1="280" y1="110" x2="288" y2="110" stroke="#2FB79A" stroke-width="1.5"/>
+    <line x1="280" y1="242" x2="288" y2="242" stroke="#2FB79A" stroke-width="1.5"/>
+    <rect x="296" y="166" width="66" height="22" rx="11" fill="#E7F6F1"/>
+    <text x="329" y="181" fill="#1E7A66" font-size="12" font-weight="700" text-anchor="middle">Δ 1px</text>
+
+    <!-- color check -->
+    <circle cx="40" cy="292" r="7" fill="#6B5CFF"/>
+    <text x="54" y="297" fill="#4A4A52" font-size="13" font-weight="600">#6B5CFF</text>
+    <text x="140" y="297" fill="#2FB79A" font-size="13" font-weight="700">exact ✓</text>
+
+    <!-- matches chip -->
+    <rect x="28" y="352" width="344" height="34" rx="17" fill="#E7F6F1"/>
+    <path d="M46 369 l5 5 l9 -11" fill="none" stroke="#2FB79A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="70" y="374" fill="#1E7A66" font-size="14" font-weight="600">matches reference — verified by measurement</text>
+  </g>
+</svg>

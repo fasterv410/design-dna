@@ -1,0 +1,10 @@
+# OS
+.DS_Store
+
+# Editor
+.idea/
+.vscode/
+
+# Scratch render wrappers (assets are committed; wrappers are not)
+assets/_wrap.html
+*.tmp

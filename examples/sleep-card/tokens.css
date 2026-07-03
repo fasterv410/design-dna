@@ -1,0 +1,67 @@
+/*
+ * Soft Instrument — design tokens (worked example)
+ * Two layers: raw primitives, then semantic roles that map to them.
+ * The UI should only ever read the semantic tokens.
+ */
+
+:root {
+  /* ---- raw primitives (measured values) ---- */
+  --gray-50: #f6f6fa;
+  --gray-100: #efeff3;
+  --gray-500: #9a9aa2;
+  --gray-950: #1b1c1e;
+  --white: #ffffff;
+  --indigo-500: #6b5cff;
+  --mint-500: #2fb79a;
+  --amber-500: #e7b549;
+
+  /* ---- semantic roles (what the UI reads) ---- */
+  --color-canvas: var(--gray-50);
+  --color-card: var(--white);
+  --color-sunken: var(--gray-100);
+  --color-ink: var(--gray-950);
+  --color-muted-ink: var(--gray-500);
+  --color-accent: var(--indigo-500);
+
+  /* data-viz — semantic to the data, used only on data ink */
+  --viz-good: var(--mint-500);
+  --viz-warn: var(--amber-500);
+
+  /* type scale */
+  --text-score: 700 2.875rem/1 system-ui;   /* 46px */
+  --text-title: 600 1.25rem/1.3 system-ui;   /* 20px */
+  --text-body: 400 0.9375rem/1.5 system-ui;  /* 15px */
+  --text-caption: 500 0.8125rem/1.4 system-ui; /* 13px */
+
+  /* spacing (4-based rhythm) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+
+  /* radius law — nothing sharp */
+  --radius-card: 24px;
+  --radius-min: 12px;
+  --radius-pill: 999px;
+
+  /* depth — borderless, shadow-separated */
+  --shadow-card: 0 6px 20px rgba(24, 24, 43, 0.06);
+}
+
+/*
+ * Dark mode is a real derivation, not invert():
+ * lift the accent, cut chroma, swap the soft shadow for a hairline.
+ * Provisional — audit before shipping a dark surface.
+ */
+.dark {
+  --color-canvas: #131317;
+  --color-card: #1c1c22;
+  --color-sunken: #26262e;
+  --color-ink: #f2f2f5;
+  --color-muted-ink: #9a9aa5;
+  --color-accent: #8779ff; /* lifted for contrast on dark */
+  --viz-good: #46c7ac;
+  --viz-warn: #edc366;
+  --shadow-card: 0 0 0 1px rgba(255, 255, 255, 0.06); /* hairline, not shadow */
+}

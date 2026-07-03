@@ -1,0 +1,31 @@
+{
+  "name": "design-dna",
+  "version": "0.1.0",
+  "description": "Reverse-engineer a UI from reference images. Measure colors, type, and spacing from real pixels, distill them into semantic design tokens, rebuild in an isolated lab, and verify the copy by measurement instead of by eye.",
+  "author": {
+    "name": "fasterv410",
+    "url": "https://github.com/fasterv410"
+  },
+  "homepage": "https://github.com/fasterv410/design-dna",
+  "repository": "https://github.com/fasterv410/design-dna",
+  "license": "MIT",
+  "keywords": [
+    "design",
+    "design-system",
+    "design-tokens",
+    "css",
+    "frontend",
+    "ui",
+    "reverse-engineering",
+    "color-extraction"
+  ],
+  "skills": [
+    "./skills/"
+  ],
+  "commands": [
+    "./commands/"
+  ],
+  "agents": [
+    "./agents/"
+  ]
+}
