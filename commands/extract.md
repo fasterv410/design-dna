@@ -33,11 +33,11 @@ region, no sandbox), say so and propose how to unblock it.
 ### Examples
 
 ```
-/dna:extract ./references/dashboard.png
-/dna:extract https://example.com/pricing
-/dna:extract ./ref-light.png and ./ref-dark.png — need both themes
+/design-dna:extract ./references/dashboard.png
+/design-dna:extract https://example.com/pricing
+/design-dna:extract ./ref-light.png and ./ref-dark.png — need both themes
 ```
 
-> Only need part of the pipeline? Use `/dna:measure` (numbers only),
-> `/dna:tokens` (just the token layer), or — once tokens exist — `/dna:build` to
+> Only need part of the pipeline? Use `/design-dna:measure` (numbers only),
+> `/design-dna:tokens` (just the token layer), or — once tokens exist — `/design-dna:build` to
 > make new screens without re-measuring.

@@ -27,9 +27,9 @@ Flag anything you couldn't read cleanly rather than guessing it.
 ### Examples
 
 ```
-/dna:measure ./references/card.png
-/dna:measure ./hero-3x.png    (state the 3x scale in the output)
+/design-dna:measure ./references/card.png
+/design-dna:measure ./hero-3x.png    (state the 3x scale in the output)
 ```
 
-> Next step: feed these numbers into `/dna:tokens` to build the semantic token
-> layer, or run the whole thing at once with `/dna:extract`.
+> Next step: feed these numbers into `/design-dna:tokens` to build the semantic token
+> layer, or run the whole thing at once with `/design-dna:extract`.

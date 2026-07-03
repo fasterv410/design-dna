@@ -27,9 +27,9 @@ Remember the trap in both directions: something that *looks* 20px off may measur
 ### Examples
 
 ```
-/dna:verify http://localhost:3000/lab vs ./references/dashboard.png
-/dna:verify ./src/app/lab/page.tsx against ./references/card.png
+/design-dna:verify http://localhost:3000/lab vs ./references/dashboard.png
+/design-dna:verify ./src/app/lab/page.tsx against ./references/card.png
 ```
 
-> Building the rebuild in the first place? Use `/dna:build`. Running the whole
-> pipeline including this step? `/dna:extract`.
+> Building the rebuild in the first place? Use `/design-dna:build`. Running the whole
+> pipeline including this step? `/design-dna:extract`.

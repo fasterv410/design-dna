@@ -36,7 +36,7 @@ shows the exact console snippet.
 In Claude Code (with the plugin installed):
 
 ```
-/dna:extract ./path-to-your-reference.png
+/design-dna:extract ./path-to-your-reference.png
 ```
 
 Or just point your agent at a screenshot and say "run the Design DNA method on

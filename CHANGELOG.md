@@ -4,6 +4,15 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/), and versions follow
 [Semantic Versioning](https://semver.org/).
 
+## [0.3.0] — 2026-07-04
+
+### Changed
+
+- **Reverted the plugin id `dna` → `design-dna`**, so the commands read
+  `/design-dna:extract`, `/design-dna:build`, and so on. The six-command split
+  from 0.2.0 stays; only the prefix changed. Install is `design-dna@design-dna`
+  again — matching the marketplace and repo name.
+
 ## [0.2.0] — 2026-07-04
 
 ### Changed

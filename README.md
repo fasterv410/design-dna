@@ -46,14 +46,14 @@ Add this repo as a plugin marketplace, then install the plugin:
 
 ```
 /plugin marketplace add fasterv410/design-dna
-/plugin install dna@design-dna
+/plugin install design-dna@design-dna
 ```
 
 That's it. You now have:
 
 - a **skill** that activates automatically when you talk about matching a
   reference,
-- a family of **`/dna:*`** slash commands to run any part of the method
+- a family of **`/design-dna:*`** slash commands to run any part of the method
   explicitly (see [Use it](#use-it)),
 - a **`design-engineer`** subagent you can hand the job to.
 
@@ -111,24 +111,24 @@ Point your agent at a reference image and ask for the method.
 
 > Run the Design DNA method on this screenshot: `./references/dashboard.png`
 
-**Claude Code — explicit `/dna:*` commands.** The method is split into steps you
+**Claude Code — explicit `/design-dna:*` commands.** The method is split into steps you
 can call on their own, so you measure once and build many times:
 
 | Command | Steps | What it does | Example |
 |---------|-------|--------------|---------|
-| **`/dna:extract`** | 1–7 | The full pipeline — a screenshot in, a verified token system out. Start here. | `/dna:extract ./references/dashboard.png` |
-| **`/dna:measure`** | 1–2 | Just pull the exact colors, type, and spacing numbers out of an image. | `/dna:measure ./ref.png` |
-| **`/dna:tokens`** | 3–4 | Write `REFERENCE.md` + `tokens.css` (raw + semantic, light/dark). | `/dna:tokens ./ref.png` |
-| **`/dna:build`** | 5–7 | Build a **new** screen from **existing** tokens — no re-measuring. Round two. | `/dna:build a settings screen from ./tokens.css` |
-| **`/dna:verify`** | 6 | Measure a rebuild against its reference and report the deltas. | `/dna:verify /lab vs ./ref.png` |
-| **`/dna:adr`** | 7 | Record the chosen direction as an ADR (supersede, don't delete). | `/dna:adr Soft Instrument` |
+| **`/design-dna:extract`** | 1–7 | The full pipeline — a screenshot in, a verified token system out. Start here. | `/design-dna:extract ./references/dashboard.png` |
+| **`/design-dna:measure`** | 1–2 | Just pull the exact colors, type, and spacing numbers out of an image. | `/design-dna:measure ./ref.png` |
+| **`/design-dna:tokens`** | 3–4 | Write `REFERENCE.md` + `tokens.css` (raw + semantic, light/dark). | `/design-dna:tokens ./ref.png` |
+| **`/design-dna:build`** | 5–7 | Build a **new** screen from **existing** tokens — no re-measuring. Round two. | `/design-dna:build a settings screen from ./tokens.css` |
+| **`/design-dna:verify`** | 6 | Measure a rebuild against its reference and report the deltas. | `/design-dna:verify /lab vs ./ref.png` |
+| **`/design-dna:adr`** | 7 | Record the chosen direction as an ADR (supersede, don't delete). | `/design-dna:adr Soft Instrument` |
 
-> Always type the **`dna:`** prefix. The commands are also available bare
+> Always type the **`design-dna:`** prefix. The commands are also available bare
 > (`/build`, `/verify`, `/tokens`…), but those generic names can collide with
-> other plugins — `/dna:*` is always unambiguous.
+> other plugins — `/design-dna:*` is always unambiguous.
 
-The typical flow: **`/dna:extract`** once to establish the system, then
-**`/dna:build`** for every screen after that. A full run hands you:
+The typical flow: **`/design-dna:extract`** once to establish the system, then
+**`/design-dna:build`** for every screen after that. A full run hands you:
 
 - `REFERENCE.md` — the measured palette (with roles), type scale, spacing/radius
   law, depth model, and named principles.
@@ -149,7 +149,7 @@ design-dna/
 ├─ skills/design-dna/          # the method (Claude skill + source of truth)
 │  ├─ SKILL.md
 │  └─ references/              # color measurement, verification, ADR template
-├─ commands/                   # the /dna:* slash commands
+├─ commands/                   # the /design-dna:* slash commands
 │  ├─ extract.md  measure.md  tokens.md  build.md  verify.md  adr.md
 ├─ agents/design-engineer.md   # the design-engineer subagent
 ├─ AGENTS.md                   # portable method (Codex, Gemini, etc.)

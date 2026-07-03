@@ -8,7 +8,7 @@ framework — so contributions should keep it sharp rather than bigger.
 - **The method** is `skills/design-dna/SKILL.md`. This is the source of truth.
 - **The references** in `skills/design-dna/references/` hold the concrete recipes
   (measuring colors, verifying fidelity, the ADR template).
-- **The commands** in `commands/` are the `/dna:*` slash commands — one per slice
+- **The commands** in `commands/` are the `/design-dna:*` slash commands — one per slice
   of the method (`extract`, `measure`, `tokens`, `build`, `verify`, `adr`). They
   should describe the same steps as the skill, just scoped.
 - **The adapters** (`AGENTS.md`, `adapters/cursor/`, `adapters/windsurf/`,

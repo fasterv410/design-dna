@@ -18,7 +18,7 @@ project's `tokens.css` / `REFERENCE.md` and confirm which one you're using.
    radius comes from a token.
 2. **Lab** — build the requested screen/component in the sandbox using **only**
    those tokens. If you find yourself needing a value with no token, stop: that's
-   a gap — add the token to the set (a `/dna:tokens`-style change) and note it,
+   a gap — add the token to the set (a `/design-dna:tokens`-style change) and note it,
    don't hardcode a one-off into what will ship.
 3. **Verify** — if there's a visual target for this screen, measure against it
    (`getBoundingClientRect` + color sampling, 1–3px / exact-hex). If it's a net-new
@@ -33,10 +33,10 @@ pixels. Keep the extracted DNA fixed and let it pay off across many screens.
 ### Examples
 
 ```
-/dna:build a settings screen from ./tokens.css
-/dna:build the charging-status card — reuse the existing tokens, don't re-extract
-/dna:build an empty-state for the history list using our design system
+/design-dna:build a settings screen from ./tokens.css
+/design-dna:build the charging-status card — reuse the existing tokens, don't re-extract
+/design-dna:build an empty-state for the history list using our design system
 ```
 
-> Need to extract the system first? Start with `/dna:extract`. Just checking a
-> rebuild's fidelity? Use `/dna:verify`.
+> Need to extract the system first? Start with `/design-dna:extract`. Just checking a
+> rebuild's fidelity? Use `/design-dna:verify`.
