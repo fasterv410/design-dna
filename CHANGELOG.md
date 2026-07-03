@@ -4,6 +4,19 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/), and versions follow
 [Semantic Versioning](https://semver.org/).
 
+## [0.2.0] — 2026-07-04
+
+### Changed
+
+- **Split the single `/design-dna` command into a `/dna:*` family**, one per slice
+  of the method: `/dna:extract` (full), `/dna:measure`, `/dna:tokens`,
+  `/dna:build`, `/dna:verify`, `/dna:adr`. Each has its own description and
+  examples. This makes the "measure once, build many" flow first-class —
+  `/dna:build` reuses an existing `tokens.css` without re-measuring.
+- **Renamed the plugin id `design-dna` → `dna`** so commands read `/dna:*`. The
+  marketplace and repo stay `design-dna`; install is now `dna@design-dna`. The
+  skill (`design-dna`), the `design-engineer` subagent, and the method are unchanged.
+
 ## [0.1.0] — 2026-07-04
 
 Initial release.

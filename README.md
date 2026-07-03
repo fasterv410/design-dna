@@ -46,14 +46,15 @@ Add this repo as a plugin marketplace, then install the plugin:
 
 ```
 /plugin marketplace add fasterv410/design-dna
-/plugin install design-dna@design-dna
+/plugin install dna@design-dna
 ```
 
 That's it. You now have:
 
 - a **skill** that activates automatically when you talk about matching a
   reference,
-- a **`/design-dna`** slash command to run it explicitly,
+- a family of **`/dna:*`** slash commands to run any part of the method
+  explicitly (see [Use it](#use-it)),
 - a **`design-engineer`** subagent you can hand the job to.
 
 > Prefer not to install a plugin? Copy `skills/design-dna/` into your project's
@@ -106,17 +107,24 @@ exist).
 
 Point your agent at a reference image and ask for the method.
 
-**Claude Code — explicit command:**
-
-```
-/design-dna ./references/dashboard.png
-```
-
 **Any tool — just ask:**
 
 > Run the Design DNA method on this screenshot: `./references/dashboard.png`
 
-The agent will work through the seven steps and hand you:
+**Claude Code — explicit `/dna:*` commands.** The method is split into steps you
+can call on their own, so you measure once and build many times:
+
+| Command | Steps | What it does | Example |
+|---------|-------|--------------|---------|
+| **`/dna:extract`** | 1–7 | The full pipeline — a screenshot in, a verified token system out. Start here. | `/dna:extract ./references/dashboard.png` |
+| **`/dna:measure`** | 1–2 | Just pull the exact colors, type, and spacing numbers out of an image. | `/dna:measure ./ref.png` |
+| **`/dna:tokens`** | 3–4 | Write `REFERENCE.md` + `tokens.css` (raw + semantic, light/dark). | `/dna:tokens ./ref.png` |
+| **`/dna:build`** | 5–7 | Build a **new** screen from **existing** tokens — no re-measuring. Round two. | `/dna:build a settings screen from ./tokens.css` |
+| **`/dna:verify`** | 6 | Measure a rebuild against its reference and report the deltas. | `/dna:verify /lab vs ./ref.png` |
+| **`/dna:adr`** | 7 | Record the chosen direction as an ADR (supersede, don't delete). | `/dna:adr Soft Instrument` |
+
+The typical flow: **`/dna:extract`** once to establish the system, then
+**`/dna:build`** for every screen after that. A full run hands you:
 
 - `REFERENCE.md` — the measured palette (with roles), type scale, spacing/radius
   law, depth model, and named principles.
@@ -137,7 +145,8 @@ design-dna/
 ├─ skills/design-dna/          # the method (Claude skill + source of truth)
 │  ├─ SKILL.md
 │  └─ references/              # color measurement, verification, ADR template
-├─ commands/design-dna.md      # the /design-dna slash command
+├─ commands/                   # the /dna:* slash commands
+│  ├─ extract.md  measure.md  tokens.md  build.md  verify.md  adr.md
 ├─ agents/design-engineer.md   # the design-engineer subagent
 ├─ AGENTS.md                   # portable method (Codex, Gemini, etc.)
 ├─ adapters/                   # one file per tool
