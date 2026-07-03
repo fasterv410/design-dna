@@ -1,12 +1,15 @@
 ---
 description: Turn a reference (or already-measured values) into REFERENCE.md + tokens.css — the semantic design-token layer, raw + semantic, light and dark. Distill and tokenize, no lab build.
-argument-hint: [path/to/reference.png | path to measured notes]
+argument-hint: [reference.png | Claude Design project | path to measured notes]
 ---
 
 Do **steps 3–4 of the Design DNA method** — Distill and Tokenize. Turn raw
 measurements into the written DNA and a token file. If the input is an image and
 no measurements exist yet, measure it first (steps 1–2); if measured values are
-already provided, start from them.
+already provided, start from them. If the input is a **Claude Design**
+(`claude.ai/design`) project, pull it with the `DesignSync` tool — its CSS
+variables often *are* the token layer already (see the skill's
+[claude-design reference](../skills/design-dna/references/claude-design.md)).
 
 Input: $ARGUMENTS
 

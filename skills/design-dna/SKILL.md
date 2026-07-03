@@ -19,6 +19,9 @@ end up 15% off on every color. Sample the pixels.
 
 - Someone shares reference images and wants that look reproduced or learned from.
 - You are starting a design system and have a visual target to anchor it.
+- The reference lives in a **Claude Design** (`claude.ai/design`) project — pull
+  it straight in and measure the source, not a screenshot. See
+  [references/claude-design.md](references/claude-design.md).
 - You need to prove a rebuild matches the original, not just "looks close".
 
 ## When not to use this
@@ -43,6 +46,12 @@ Collect the reference images at the highest resolution available. Note the
 **device scale** (e.g. an iPhone screenshot is often 3x — 1320px wide file =
 440pt of layout). You need the scale to convert measured pixels into layout
 units later. Save originals; never edit over them.
+
+**From Claude Design (`claude.ai/design`):** if the reference is a Claude Design
+project, pull it directly with the `DesignSync` tool instead of a screenshot —
+and because it's real HTML/CSS you can measure the *source* exactly, skipping
+the pixel-sampling in step 2. This is the highest-fidelity capture path. See
+[references/claude-design.md](references/claude-design.md).
 
 ### 2. Measure (pixels, not vibes)
 
@@ -176,3 +185,5 @@ ship. When in doubt, change the content and make the output your own.
 - [verifying-fidelity.md](references/verifying-fidelity.md) — measure the
   rebuild against the reference in the browser.
 - [adr-template.md](references/adr-template.md) — the decision record template.
+- [claude-design.md](references/claude-design.md) — pull a reference straight
+  from a Claude Design (`claude.ai/design`) project and measure the source.

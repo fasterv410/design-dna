@@ -140,6 +140,22 @@ The typical flow: **`/design-dna:create`** once to establish the system, then
 You supply the sandbox to build the lab in (a scratch route, a Storybook story);
 the method tells the agent how to use it and how to measure the result.
 
+### Reference from Claude Design
+
+Your reference doesn't have to be a screenshot. If it lives in a **Claude
+Design** (`claude.ai/design`) project, design-dna can pull it straight in with
+the `DesignSync` tool and measure the **source HTML/CSS** — exact values, no
+pixel-guessing:
+
+```
+/design-dna:create the button set in my Claude Design project
+```
+
+Because you're reading real CSS variables and DOM geometry instead of sampling
+pixels, the "measure" step is exact by construction. This path is **Claude Code
+/ claude.ai only** (it needs the `claude.ai/design` login); the details are in
+[`skills/design-dna/references/claude-design.md`](skills/design-dna/references/claude-design.md).
+
 ---
 
 ## What's in the box
@@ -148,7 +164,7 @@ the method tells the agent how to use it and how to measure the result.
 design-dna/
 ├─ skills/design-dna/          # the method (Claude skill + source of truth)
 │  ├─ SKILL.md
-│  └─ references/              # color measurement, verification, ADR template
+│  └─ references/              # measuring, verifying, ADR template, Claude Design
 ├─ commands/                   # the /design-dna:* slash commands
 │  ├─ create.md  measure.md  tokenize.md  build.md  verify.md  record.md
 ├─ agents/design-engineer.md   # the design-engineer subagent

@@ -1,6 +1,6 @@
 {
   "name": "design-dna",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Turn a screenshot you admire into a real design system: measured tokens, a lab test bed, and a decision record.",
   "owner": {
     "name": "fasterv410"
@@ -10,7 +10,7 @@
       "name": "design-dna",
       "source": "./",
       "description": "Reverse-engineer a UI from reference images. Measure colors, type, and spacing from real pixels, distill them into semantic design tokens, rebuild in an isolated lab, and verify the copy by measurement instead of by eye.",
-      "version": "0.4.0",
+      "version": "0.5.0",
       "author": {
         "name": "fasterv410"
       },

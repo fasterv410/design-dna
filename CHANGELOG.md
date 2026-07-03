@@ -4,6 +4,18 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/), and versions follow
 [Semantic Versioning](https://semver.org/).
 
+## [0.5.0] — 2026-07-04
+
+### Added
+
+- **Claude Design as a reference source.** The method can now pull a reference
+  straight from a **Claude Design** (`claude.ai/design`) project with the
+  `DesignSync` tool instead of a screenshot — and because it's real HTML/CSS, it
+  measures the *source* exactly (no pixel sampling). New reference doc
+  `skills/design-dna/references/claude-design.md`, wired into the skill's Capture
+  step and the `create` / `measure` / `tokenize` commands. This capture path is
+  Claude Code / claude.ai only.
+
 ## [0.4.0] — 2026-07-04
 
 ### Changed

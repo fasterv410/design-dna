@@ -1,12 +1,17 @@
 ---
 description: Measure exact colors, type sizes, spacing, and radii from a reference image — the raw numbers only, no tokens and no build. Use when you just want to know what's actually in a screenshot.
-argument-hint: [path/to/reference.png | URL]
+argument-hint: [reference.png | URL | Claude Design project]
 ---
 
 Do **steps 1–2 of the Design DNA method only** — Capture and Measure. Pull real
 values out of the reference and report them. Do not tokenize, do not build.
 
 Reference: $ARGUMENTS
+
+If the reference is a **Claude Design** (`claude.ai/design`) project, pull it
+with the `DesignSync` tool and read the source HTML/CSS — the values are exact,
+no pixel sampling needed. See the skill's
+[claude-design reference](../skills/design-dna/references/claude-design.md).
 
 Follow the "measure, don't guess" rule from the `design-dna` skill and its
 [measuring-colors reference](../skills/design-dna/references/measuring-colors.md):

@@ -1,6 +1,6 @@
 ---
 description: Run the full Design DNA method on a reference — capture, measure, distill, tokenize, lab, verify, record. The round-one command that turns a screenshot into REFERENCE.md + tokens.css + a verified rebuild.
-argument-hint: [path/to/reference.png | URL | short brief]
+argument-hint: [reference.png | URL | Claude Design project | short brief]
 ---
 
 Run the **complete Design DNA method** on the reference below, using the
@@ -12,7 +12,10 @@ Reference: $ARGUMENTS
 Work through all seven steps in order, producing each artifact before the next:
 
 1. **Capture** — load the reference(s); state the device scale you'll use to
-   convert pixels to layout units.
+   convert pixels to layout units. If the reference is a **Claude Design**
+   (`claude.ai/design`) project, pull it with the `DesignSync` tool and measure
+   the source HTML directly — see the skill's
+   [claude-design reference](../skills/design-dna/references/claude-design.md).
 2. **Measure** — pull exact colors, type sizes, spacing, radii, and shadows from
    real pixels. Never guess a value; show the measured numbers.
 3. **Distill** — write `REFERENCE.md`: palette with semantic roles, type scale,
