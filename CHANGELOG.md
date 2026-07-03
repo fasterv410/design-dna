@@ -4,6 +4,16 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/), and versions follow
 [Semantic Versioning](https://semver.org/).
 
+## [0.4.0] — 2026-07-04
+
+### Changed
+
+- **Renamed three commands to clearer verbs:** `extract` → **`create`**,
+  `tokens` → **`tokenize`**, `adr` → **`record`**. The full set is now
+  `/design-dna:create`, `/design-dna:measure`, `/design-dna:tokenize`,
+  `/design-dna:build`, `/design-dna:verify`, `/design-dna:record`. Behaviour is
+  unchanged — only the names read more like what each command does.
+
 ## [0.3.0] — 2026-07-04
 
 ### Changed

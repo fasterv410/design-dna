@@ -32,4 +32,4 @@ Remember the trap in both directions: something that *looks* 20px off may measur
 ```
 
 > Building the rebuild in the first place? Use `/design-dna:build`. Running the whole
-> pipeline including this step? `/design-dna:extract`.
+> pipeline including this step? `/design-dna:create`.

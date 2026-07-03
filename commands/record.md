@@ -29,9 +29,9 @@ and place it wherever the project keeps decision records (`docs/adr/` is typical
 ### Examples
 
 ```
-/design-dna:adr Soft Instrument — supersedes the Electric Lime direction
-/design-dna:adr adopt the measured dashboard palette as our design system
+/design-dna:record Soft Instrument — supersedes the Electric Lime direction
+/design-dna:record adopt the measured dashboard palette as our design system
 ```
 
-> Haven't chosen the direction yet? It comes out of `/design-dna:tokens` (the named
-> direction in `REFERENCE.md`) or a full `/design-dna:extract` run.
+> Haven't chosen the direction yet? It comes out of `/design-dna:tokenize` (the named
+> direction in `REFERENCE.md`) or a full `/design-dna:create` run.

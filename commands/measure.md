@@ -31,5 +31,5 @@ Flag anything you couldn't read cleanly rather than guessing it.
 /design-dna:measure ./hero-3x.png    (state the 3x scale in the output)
 ```
 
-> Next step: feed these numbers into `/design-dna:tokens` to build the semantic token
-> layer, or run the whole thing at once with `/design-dna:extract`.
+> Next step: feed these numbers into `/design-dna:tokenize` to build the semantic token
+> layer, or run the whole thing at once with `/design-dna:create`.

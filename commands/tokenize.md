@@ -33,9 +33,9 @@ Per the `design-dna` skill:
 ### Examples
 
 ```
-/design-dna:tokens ./references/dashboard.png
-/design-dna:tokens ./notes/measured-values.md
+/design-dna:tokenize ./references/dashboard.png
+/design-dna:tokenize ./notes/measured-values.md
 ```
 
 > Next: prove the tokens with `/design-dna:build` (rebuild the reference in a lab), or
-> run everything end-to-end with `/design-dna:extract`.
+> run everything end-to-end with `/design-dna:create`.

@@ -9,7 +9,7 @@ framework — so contributions should keep it sharp rather than bigger.
 - **The references** in `skills/design-dna/references/` hold the concrete recipes
   (measuring colors, verifying fidelity, the ADR template).
 - **The commands** in `commands/` are the `/design-dna:*` slash commands — one per slice
-  of the method (`extract`, `measure`, `tokens`, `build`, `verify`, `adr`). They
+  of the method (`create`, `measure`, `tokenize`, `build`, `verify`, `record`). They
   should describe the same steps as the skill, just scoped.
 - **The adapters** (`AGENTS.md`, `adapters/cursor/`, `adapters/windsurf/`,
   `adapters/copilot/`) are condensed mirrors of the method for other tools.

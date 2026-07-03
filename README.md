@@ -116,18 +116,18 @@ can call on their own, so you measure once and build many times:
 
 | Command | Steps | What it does | Example |
 |---------|-------|--------------|---------|
-| **`/design-dna:extract`** | 1–7 | The full pipeline — a screenshot in, a verified token system out. Start here. | `/design-dna:extract ./references/dashboard.png` |
+| **`/design-dna:create`** | 1–7 | The full pipeline — a screenshot in, a verified token system out. Start here. | `/design-dna:create ./references/dashboard.png` |
 | **`/design-dna:measure`** | 1–2 | Just pull the exact colors, type, and spacing numbers out of an image. | `/design-dna:measure ./ref.png` |
-| **`/design-dna:tokens`** | 3–4 | Write `REFERENCE.md` + `tokens.css` (raw + semantic, light/dark). | `/design-dna:tokens ./ref.png` |
+| **`/design-dna:tokenize`** | 3–4 | Write `REFERENCE.md` + `tokens.css` (raw + semantic, light/dark). | `/design-dna:tokenize ./ref.png` |
 | **`/design-dna:build`** | 5–7 | Build a **new** screen from **existing** tokens — no re-measuring. Round two. | `/design-dna:build a settings screen from ./tokens.css` |
 | **`/design-dna:verify`** | 6 | Measure a rebuild against its reference and report the deltas. | `/design-dna:verify /lab vs ./ref.png` |
-| **`/design-dna:adr`** | 7 | Record the chosen direction as an ADR (supersede, don't delete). | `/design-dna:adr Soft Instrument` |
+| **`/design-dna:record`** | 7 | Record the chosen direction as an ADR (supersede, don't delete). | `/design-dna:record Soft Instrument` |
 
 > Always type the **`design-dna:`** prefix. The commands are also available bare
 > (`/build`, `/verify`, `/tokens`…), but those generic names can collide with
 > other plugins — `/design-dna:*` is always unambiguous.
 
-The typical flow: **`/design-dna:extract`** once to establish the system, then
+The typical flow: **`/design-dna:create`** once to establish the system, then
 **`/design-dna:build`** for every screen after that. A full run hands you:
 
 - `REFERENCE.md` — the measured palette (with roles), type scale, spacing/radius
@@ -150,7 +150,7 @@ design-dna/
 │  ├─ SKILL.md
 │  └─ references/              # color measurement, verification, ADR template
 ├─ commands/                   # the /design-dna:* slash commands
-│  ├─ extract.md  measure.md  tokens.md  build.md  verify.md  adr.md
+│  ├─ create.md  measure.md  tokenize.md  build.md  verify.md  record.md
 ├─ agents/design-engineer.md   # the design-engineer subagent
 ├─ AGENTS.md                   # portable method (Codex, Gemini, etc.)
 ├─ adapters/                   # one file per tool
