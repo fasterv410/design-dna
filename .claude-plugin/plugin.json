@@ -24,8 +24,5 @@
   ],
   "commands": [
     "./commands/"
-  ],
-  "agents": [
-    "./agents/"
   ]
 }
