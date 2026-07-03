@@ -123,6 +123,10 @@ can call on their own, so you measure once and build many times:
 | **`/dna:verify`** | 6 | Measure a rebuild against its reference and report the deltas. | `/dna:verify /lab vs ./ref.png` |
 | **`/dna:adr`** | 7 | Record the chosen direction as an ADR (supersede, don't delete). | `/dna:adr Soft Instrument` |
 
+> Always type the **`dna:`** prefix. The commands are also available bare
+> (`/build`, `/verify`, `/tokens`…), but those generic names can collide with
+> other plugins — `/dna:*` is always unambiguous.
+
 The typical flow: **`/dna:extract`** once to establish the system, then
 **`/dna:build`** for every screen after that. A full run hands you:
 
